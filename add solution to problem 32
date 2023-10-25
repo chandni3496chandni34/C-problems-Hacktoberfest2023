@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    float fahrenheit, celsius, kelvin;
+
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+
+    // Convert Fahrenheit to Celsius and Kelvin
+    celsius = (fahrenheit - 32) / 1.8;
+    kelvin = celsius + 273.15;
+
+    // Display the results in a tabular form
+    printf("\n----------------------------------------------\n");
+    printf("|  Fahrenheit  |  Celsius  |  Kelvin  |\n");
+    printf("----------------------------------------------\n");
+    printf("|    %.2f      |   %.2f    |  %.2f   |\n", fahrenheit, celsius, kelvin);
+    printf("----------------------------------------------\n");
+
+    // Convert Celsius to Fahrenheit and Kelvin
+    celsius = (fahrenheit - 32) / 1.8;
+    kelvin = celsius + 273.15;
+
+    // Display the results in a tabular form
+    printf("\n----------------------------------------------\n");
+    printf("|  Celsius  |  Fahrenheit  |  Kelvin  |\n");
+    printf("----------------------------------------------\n");
+    printf("|  %.2f     |    %.2f     |   %.2f   |\n", celsius, fahrenheit, kelvin);
+    printf("----------------------------------------------\n");
+
+    // Convert Kelvin to Fahrenheit and Celsius
+    fahrenheit = (kelvin * 1.8) - 459.67;
+    celsius = kelvin - 273.15;
+
+    // Display the results in a tabular form
+    printf("\n----------------------------------------------\n");
+    printf("|  Kelvin  |  Celsius  |  Fahrenheit  |\n");
+    printf("----------------------------------------------\n");
+    printf("|  %.2f    |   %.2f    |    %.2f     |\n", kelvin, celsius, fahrenheit);
+    printf("----------------------------------------------\n");
+
+    return 0;
+}
